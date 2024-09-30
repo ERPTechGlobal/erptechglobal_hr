@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-21 22:07:53.367887",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "location_name",
+  "location_gps",
+  "allowed_radius",
+  "column_break_wfcm",
+  "map"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "location_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Location Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "location_gps",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Location GPS",
+   "reqd": 1
+  },
+  {
+   "description": "Allowed radius range in meters",
+   "fieldname": "allowed_radius",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Allowed Radius",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wfcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "Map"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-23 20:10:57.835642",
+ "modified_by": "Administrator",
+ "module": "ERP Tech Global HR",
+ "name": "GPS Locations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

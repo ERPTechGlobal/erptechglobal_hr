@@ -1,1 +1,7 @@
-# erptechglobal_hr
+## ERP Tech Global HR
+
+Employee Self Service
+
+#### License
+
+mit
