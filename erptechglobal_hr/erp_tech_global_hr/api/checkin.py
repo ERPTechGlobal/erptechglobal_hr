@@ -66,7 +66,6 @@ def get_my_today_checkins(employee):
 
         elif st_list.working_hours_calculation_based_on == "Every Valid Check-in and Check-out":
             if len(checkins["data"]) > 0:
-                # print(checkins["data"][0].log_type, "Checking check")
                 if checkins["data"][0].log_type == "IN":
                     checkins["ShowCheckInOut"] = "OUT"
                 else:
@@ -196,7 +195,6 @@ def create_employee_checkin(logtype, employee, time, gps, deviceId):
             checkin.insert(ignore_permissions=True)
             if checkin.shift:
                 shift = frappe.get_doc("Shift Type", checkin.shift)
-                print(shift, "Checking Shift Values \n\n\n\n")
                 if shift:
                     shift.last_sync_of_checkin = gps_time_formatted
                     shift.save(ignore_permissions=True)
@@ -205,10 +203,7 @@ def create_employee_checkin(logtype, employee, time, gps, deviceId):
             message = logtype+" recorded from " + \
                 matched_location['location_name']+" at " + \
                 gps_time_formatted+"\n\nGPS: "+gps
-
     return {"success": success, "message": message}
-    # print(logtype, employee, time, gps, deviceId)
-    # return logtype, employee, time, gps, deviceId
 
 
 @frappe.whitelist()

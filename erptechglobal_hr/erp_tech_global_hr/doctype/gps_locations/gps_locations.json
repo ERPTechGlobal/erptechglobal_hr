@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "GPS-LOC-.#####",
  "creation": "2024-09-21 22:07:53.367887",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -14,15 +15,6 @@
  "fields": [
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "location_name",
-   "fieldtype": "Data",
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "label": "Location Name",
-   "reqd": 1
-  },
-  {
-   "allow_in_quick_entry": 1,
    "fieldname": "location_gps",
    "fieldtype": "Data",
    "in_global_search": 1,
@@ -31,9 +23,18 @@
    "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
+   "fieldname": "location_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Location Name",
+   "reqd": 1
+  },
+  {
    "description": "Allowed radius range in meters",
    "fieldname": "allowed_radius",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Allowed Radius",
    "reqd": 1
@@ -49,11 +50,19 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-09-23 20:10:57.835642",
+ "links": [
+  {
+   "link_doctype": "Employee GPS Location",
+   "link_fieldname": "employee",
+   "parent_doctype": "Employee GPS Location",
+   "table_fieldname": "locations"
+  }
+ ],
+ "modified": "2024-10-12 16:28:47.104972",
  "modified_by": "Administrator",
  "module": "ERP Tech Global HR",
  "name": "GPS Locations",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -69,7 +78,11 @@
    "write": 1
   }
  ],
+ "search_fields": "location_name",
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "location_name",
+ "track_changes": 1
 }

@@ -42,13 +42,13 @@ def get_employee_info(email):
 @frappe.whitelist()
 def get_allowed_locations(employee):
     locations = frappe.db.get_all(
-        "Employee GPS Locations",
+        "Employee GPS Location",
         filters={
             "employee": employee,
         },
         fields=["name"]
     )
-    data = ""
+    data = {}
     if len(locations) > 0:
         data = {}
         data["locations"] = frappe.db.sql("""
@@ -70,7 +70,6 @@ def get_allowed_locations(employee):
             )
 
         """, values=locations[0], as_dict=1)
-        
     return data
 
 def get_employee_devices(employee):
