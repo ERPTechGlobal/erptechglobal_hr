@@ -10,6 +10,21 @@ app_license = "mit"
 
 # required_apps = []
 
+fixtures = [
+	{
+        "doctype":"Custom Field",
+        "filters": [
+            [
+                "module",
+                "in",
+                (
+                    "ERP Tech Global HR"
+                )
+            ]
+        ]
+    }
+]
+
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
@@ -207,26 +222,26 @@ app_license = "mit"
 # User Data Protection
 # --------------------
 
-# user_data_fields = [
-# 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_3}",
-# 		"strict": False,
-# 	},
-# 	{
-# 		"doctype": "{doctype_4}"
-# 	}
-# ]
+user_data_fields = [
+	{
+		"doctype": "{doctype_1}",
+		"filter_by": "{filter_by}",
+		"redact_fields": ["{field_1}", "{field_2}"],
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_2}",
+		"filter_by": "{filter_by}",
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_3}",
+		"strict": False,
+	},
+	{
+		"doctype": "{doctype_4}"
+	}
+]
 
 # Authentication and authorization
 # --------------------------------

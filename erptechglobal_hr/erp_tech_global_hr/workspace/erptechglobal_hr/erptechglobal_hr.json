@@ -1,0 +1,67 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"PqMejkrsB6\",\"type\":\"header\",\"data\":{\"text\":\"<b>Reports &amp; Masters</b>\",\"col\":12}},{\"id\":\"whXMrjeZq9\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}}]",
+ "creation": "2024-11-03 20:30:24.669331",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "hr",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "ERPTechGlobal HR",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GPS Locations",
+   "link_count": 0,
+   "link_to": "GPS Locations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee GPS Location",
+   "link_count": 0,
+   "link_to": "Employee GPS Location",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Device Registration",
+   "link_count": 0,
+   "link_to": "Employee Device Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-11-03 21:22:24.669331",
+ "modified_by": "Administrator",
+ "module": "ERP Tech Global HR",
+ "name": "ERPTechGlobal HR",
+ "number_cards": [],
+ "owner": "muhammadsaadsafdar2005@gmail.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 14.0,
+ "shortcuts": [],
+ "title": "ERPTechGlobal HR"
+}
